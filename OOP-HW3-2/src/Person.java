@@ -41,7 +41,7 @@ public class Person {
 		//Person adult = new Person();
 		//Person.setName("A adult");//이름 지정
 		//adult.setAge(21);//나이 지정
-		Person("A adult",21);
+		Person adult = new Person("A adult",21);
 		return adult;
 	}
 	
@@ -50,7 +50,7 @@ public class Person {
 		//Person toddler = new Person();
 		//toddler.setName("A toddler");//이름 지정
 		//toddler.setAge(2);//나이 지정
-		Person("A toddler",2);
+		Person toddler = new Person("A toddler",2);
 		return toddler;
 		
 	}
@@ -58,14 +58,14 @@ public class Person {
 		//Person preschooler = new Person();
 		//preschooler.setName("A preschooler");//이름 지정
 		//preschooler.setAge(5);//나이 지정
-		Person("A preschooler",5);
+		Person preschooler = new Person("A preschooler",5);
 		return preschooler;
 	}
 	public static Person createAdolescent() {//adolescent 특별한 instance
 		//Person adolescent = new Person();
 		//adolescent.setName("A adolescent");//이름 지정
 		//adolescent.setAge(9);//나이 지정
-		Person("A adolescent",9);
+		Person preschooler = new Person("A adolescent",9);
 		return adolescent;
 	
 
@@ -74,7 +74,7 @@ public class Person {
 		//Person Teenager = new Person();
 		//Teenager.setName("A Teenager");//이름  지정
 		//Teenager.setAge(15);//나이 지정
-		Person("A Teenager",15);
+		Person Teenager = new Person("A Teenager",15);
 		return Teenager;
 }
 	
