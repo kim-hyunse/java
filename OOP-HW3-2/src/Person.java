@@ -1,84 +1,89 @@
 
 public class Person {
 
-	private static String name;//ÀÌ¸§
-	private static int age;//³ªÀÌ
+	private static String name;//ì´ë¦„
+	private static int age;//ë‚˜ì´
 
 	
 	public Person() {
-		name="No name yet";//»ı¼ºÀÚ ÃÊ±âÈ­ °ª
+		name="No name yet";//ìƒì„±ì ì´ˆê¸°í™” ê°’
 		age=0;
 	}
 	public Person(String myname,int myage) {
 		name=myname;
-	    age=myage;//´Ù¸¥ »ı¼ºÀÚ, ÀÌ¸§ ³ªÀÌ ³Ö¾îÁÖ´Â »ı¼ºÀÚ
+	    	age=myage;//ë‹¤ë¥¸ ìƒì„±ì, ì´ë¦„ ë‚˜ì´ ë„£ì–´ì£¼ëŠ” ìƒì„±ì
 	}
 	
 	public String getName(){
 		
-		return name;//ÀÌ¸§ ¹İÈ¯ getter
+		return name;//ì´ë¦„ ë°˜í™˜ getter
 	}
 	
 	public int getAge(){
 		
-		return age;//³ªÀÌ ¹İÈ¯ getter
+		return age;//ë‚˜ì´ ë°˜í™˜ getter
 	}
 	
 	public static void setName(String myname) {
-		name=myname;//ÀÌ¸§ ¼³Á¤
+		name=myname;//ì´ë¦„ ì„¤ì •
 		
 	}
 	public static void setName(String lastn,String firstn) {
-		name=lastn+firstn;//ÀÌ¸§ ¼³Á¤, ¼º°ú ÀÌ¸§ µû·Î 
+		name=lastn+firstn;//ì´ë¦„ ì„¤ì •, ì„±ê³¼ ì´ë¦„ ë”°ë¡œ 
 	
 		
 	}
 	public static void setAge(int myage) {
-		age=myage;//³ªÀÌ ¼³Á¤
+		age=myage;//ë‚˜ì´ ì„¤ì •
 	}
 	
-	public static Person createAdult() {//¾î¸¥ Æ¯º°ÇÑ instance
-		Person adult = new Person();
-		Person.setName("A adult");//ÀÌ¸§ ÁöÁ¤
-		adult.setAge(21);//³ªÀÌ ÁöÁ¤
+	public static Person createAdult() {//ì–´ë¥¸ íŠ¹ë³„í•œ instance
+		//Person adult = new Person();
+		//Person.setName("A adult");//ì´ë¦„ ì§€ì •
+		//adult.setAge(21);//ë‚˜ì´ ì§€ì •
+		Person("A adult",21);
 		return adult;
 	}
 	
 	
-	public static Person createToddler() {//toddler Æ¯º°ÇÑ instance
-		Person toddler = new Person();
-		toddler.setName("A toddler");//ÀÌ¸§ ÁöÁ¤
-		toddler.setAge(2);//³ªÀÌ ÁöÁ¤
+	public static Person createToddler() {//toddler íŠ¹ë³„í•œ instance
+		//Person toddler = new Person();
+		//toddler.setName("A toddler");//ì´ë¦„ ì§€ì •
+		//toddler.setAge(2);//ë‚˜ì´ ì§€ì •
+		Person("A toddler",2);
 		return toddler;
 		
 	}
-	public static Person createPreschooler() {//preschooler Æ¯º°ÇÑ instance
-		Person preschooler = new Person();
-		preschooler.setName("A preschooler");//ÀÌ¸§ ÁöÁ¤
-		preschooler.setAge(5);//³ªÀÌ ÁöÁ¤
+	public static Person createPreschooler() {//preschooler íŠ¹ë³„í•œ instance
+		//Person preschooler = new Person();
+		//preschooler.setName("A preschooler");//ì´ë¦„ ì§€ì •
+		//preschooler.setAge(5);//ë‚˜ì´ ì§€ì •
+		Person("A preschooler",5);
 		return preschooler;
 	}
-	public static Person createAdolescent() {//adolescent Æ¯º°ÇÑ instance
-		Person adolescent = new Person();
-		adolescent.setName("A adolescent");//ÀÌ¸§ ÁöÁ¤
-		adolescent.setAge(9);//³ªÀÌ ÁöÁ¤
+	public static Person createAdolescent() {//adolescent íŠ¹ë³„í•œ instance
+		//Person adolescent = new Person();
+		//adolescent.setName("A adolescent");//ì´ë¦„ ì§€ì •
+		//adolescent.setAge(9);//ë‚˜ì´ ì§€ì •
+		Person("A adolescent",9);
 		return adolescent;
 	
 
 }
-	public static Person createTeenager() {//Teenager Æ¯º°ÇÑ instance
-		Person Teenager = new Person();
-		Teenager.setName("A Teenager");//ÀÌ¸§  ÁöÁ¤
-		Teenager.setAge(15);//³ªÀÌ ÁöÁ¤
+	public static Person createTeenager() {//Teenager íŠ¹ë³„í•œ instance
+		//Person Teenager = new Person();
+		//Teenager.setName("A Teenager");//ì´ë¦„  ì§€ì •
+		//Teenager.setAge(15);//ë‚˜ì´ ì§€ì •
+		Person("A Teenager",15);
 		return Teenager;
 }
 	
 	
 	public static void main(String[] args) {
 		 Person y = new Person();
-		 System.out.println("Testing the default constructor");//±âº» »ı¼ºÀÚ Ã¼Å©
+		 System.out.println("Testing the default constructor");//ê¸°ë³¸ ìƒì„±ì ì²´í¬
 		 System.out.println("Oject has name " + y.getName() + " and age " + y.getAge());
-		 System.out.println("\nCreating each of the specialized instances");//Æ¯º°ÇÑ instance Ã¼Å©
+		 System.out.println("\nCreating each of the specialized instances");//íŠ¹ë³„í•œ instance ì²´í¬
 		 Person x;
 		 x = Person.createToddler();//toddler
 		 System.out.println("Created object with name " + x.getName() + " and age " + x.getAge());
@@ -93,10 +98,10 @@ public class Person {
 		 System.out.println("Created object with name " + x.getName() + " and age " + x.getAge());
 		 System.out.println("\nTesting set - Name should be Bobby with age 10");
 		 x.setName("Bobby");
-		 x.setAge(10);//10»ì ¹Ùºñ ¼¼ÆÃ
+		 x.setAge(10);//10ì‚´ ë°”ë¹„ ì„¸íŒ…
 		 System.out.println("Oject has name " + x.getName() + " and age " + x.getAge());
 		 System.out.println("\nTesting the alternate set method - name change to Jane Doe");
-		 x.setName("Jane", "Doe");//staticÀÌ Á¦´ë·Î ÀÛµ¿ÇÏ´Â Áö È£°¡ÀÎÇÏ±â À§ÇØ °ª º¯°æ
+		 x.setName("Jane", "Doe");//staticì´ ì œëŒ€ë¡œ ì‘ë™í•˜ëŠ” ì§€ í˜¸ê°€ì¸í•˜ê¸° ìœ„í•´ ê°’ ë³€ê²½
 		 x.setAge(10);
 		 System.out.println("Oject has name " + x.getName() + " and age " + x.getAge());
 		 }
